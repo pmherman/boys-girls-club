@@ -1,8 +1,7 @@
 var ticketPrice;
 
 $(document).ready(function() {
-    $('.ml-auto').click(function(e) {
-        e.preventDefault();
+    $('.ml-auto').click(function() {
         if ($("#navbarNav").hasClass("show")) {
             $('.fa-bars').css('-webkit-transform', 'rotate(0deg)');
             $('.navbar').removeClass('dark-background');
@@ -10,6 +9,9 @@ $(document).ready(function() {
             $('.fa-bars').css('-webkit-transform', 'rotate(90deg)');
             $('.navbar').addClass('dark-background');
         }        
+    })
+    $('.nav-link, #ticketButton').click(function() {
+        $('.navbar-toggler').click(); 
     })
 
 //Countdown Timer

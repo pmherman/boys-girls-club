@@ -70,7 +70,7 @@ header {
     margin-bottom: 3em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .jumbotron {
         padding-bottom: 6em;
     }
@@ -81,7 +81,7 @@ header {
         font-size: 1em;
     }
     #city-state {
-        padding-right: 1em;
+        padding-right: 5px !important;
     }
   }
 
