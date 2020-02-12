@@ -1,0 +1,106 @@
+/* Load Custom Fonts */
+@font-face {
+    font-family: barlow-regular;
+    src: url(../fonts/Barlow-Regular.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: barlow-bold;
+    src: url(../fonts/Barlow-Bold.ttf);
+    font-display: swap;
+    
+}
+
+body {
+    background-color: black;
+}
+
+/* Header CSS */
+
+header {
+    background-color: black;
+    height: 50em;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/background_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+    vertical-align: middle;
+    padding-top: 6em;
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
+    font-family: barlow-bold;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.jumbotron h1{
+    font-size: 6em;
+    line-height: 1;
+}
+
+.jumbotron h5 {
+    font-family: barlow-regular;
+    font-size: 1.5em;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.jumbotron h5>span {
+    padding-right: 2em;
+}
+
+.jumbotron .img-fluid {
+    margin-bottom: 3em;
+}
+
+/* Navbar */
+
+.nav-link {
+    font-family: barlow-regular;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    color: #822ea8;
+}
+
+.navbar .navbar-nav {
+    margin: auto;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#ticketButton {
+    width: 150px;
+    height: 35px;
+    background: -webkit-linear-gradient(0.50turn, #822ea8, #da0e90);
+    font-family: barlow-regular;
+    color: white;
+    border: 0px;
+}
+
+#ticketButton:hover {
+    background: -webkit-linear-gradient(0.50turn, #da0e90, #822ea8);
+}
+
+/* FontAwesome */
+
+.fa-globe, .fa-calendar-alt, .fa-bars {
+    background: -webkit-linear-gradient(0.50turn, #822ea8, #da0e90);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
