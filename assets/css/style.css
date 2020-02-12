@@ -13,14 +13,20 @@
 
 body {
     background-color: black;
+    font-family: barlow-regular;
+    color: white;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Header CSS */
 
 header {
     background-color: black;
-    height: 50em;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/background_header.jpg);
+    background: url(../images/lines.png), linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/background_header.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,6 +38,9 @@ header {
     background-color: transparent;
     vertical-align: middle;
     padding-top: 6em;
+    padding-bottom: 12em;
+    margin-bottom: 0;
+    clear: both;
 }
 
 .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
@@ -53,13 +62,28 @@ header {
     font-weight: normal;
 }
 
-.jumbotron h5>span {
-    padding-right: 2em;
+#city-state {
+    padding-right: 3em;
 }
 
 .jumbotron .img-fluid {
     margin-bottom: 3em;
 }
+
+@media screen and (max-width: 400px) {
+    .jumbotron {
+        padding-bottom: 6em;
+    }
+    .jumbotron h1{
+        font-size: 3em;
+    }
+    .jumbotron h5 {
+        font-size: 1em;
+    }
+    #city-state {
+        padding-right: 1em;
+    }
+  }
 
 /* Navbar */
 
@@ -103,4 +127,39 @@ header {
     background: -webkit-linear-gradient(0.50turn, #822ea8, #da0e90);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Countdown Div */
+
+#countdown {
+    background: url('../images/texture1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#countdown h2 {
+    font-family: barlow-bold;
+    font-size: 3em;
+}
+
+#countdown p {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.timer {
+    display: inline-block;
+    margin: 1em;
+    padding: 3px;
+    border: 1px solid white;
+    width: 125px;
+    height: 150px;
+}
+
+.timer h1 {
+    font-size: 6em;
+    margin-bottom: 0;
 }
