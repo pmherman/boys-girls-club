@@ -121,6 +121,10 @@ header {
     background: -webkit-linear-gradient(0.50turn, #da0e90, #822ea8);
 }
 
+.dark-background { 
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
 /* FontAwesome */
 
 .fa-globe, .fa-calendar-alt, .fa-bars {
@@ -138,6 +142,8 @@ header {
     background-repeat: no-repeat;
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #countdown h2 {
@@ -169,9 +175,12 @@ header {
 #sponsorship {
     font-family: barlow-bold;
     background-color: white;
+    background-size: cover;
     color: #2e2f4f;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .sponsorship-pricing {
@@ -195,4 +204,44 @@ header {
 
 .active {
     background: -webkit-linear-gradient(0.45turn, #da0e90, #822ea8);
+}
+
+/* Ticket Section */
+
+#tickets {
+    font-family: barlow-bold;
+    background-color: #2e2f4f;
+    background-size: cover;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ticket-pricing {
+    font-family: barlow-regular;
+    display: inline-table;
+    position: relative;
+    margin: 1em;
+    padding: 15px;
+    border: 2px solid white;
+    height: 5em;
+    width: 20em;
+}
+
+
+/* footer */
+
+footer {
+    font-family: barlow-regular;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #15162b
+}
+
+footer hr {
+    border: 1px solid rgb(255,255,255, 0.6);
 }
