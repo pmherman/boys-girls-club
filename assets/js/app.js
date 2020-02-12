@@ -1,3 +1,5 @@
+var ticketPrice;
+
 $(document).ready(function() {
     $('.ml-auto').click(function(e) {
         e.preventDefault();
@@ -33,4 +35,53 @@ var x = setInterval(function() {
       }
 }, 1000)
 
+//Change background color of navigation bar on scroll
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll < 300){
+        $('.fixed-top').css('background', 'transparent');
+    } else{
+        $('.fixed-top').css('background', 'rgba(0,0,0, 0.9)');
+    }
+});
+
+$('.sponsorship-pricing').click(function(e) {
+    e.preventDefault();
+    $('.sponsorship-pricing').css({'background-color':'transparent','color':'#2e2f4f'});
+    $('.sponsorship-pricing').removeClass('active');
+    $(this).css({'background-color':'#f00','color':'#fff'});
+    $(this).addClass('active');
+    ticketPrice = $(this).data('value');
 })
+
+$('.sponsorship-pricing').click(function() {
+    console.log(`Current Package Selected: ${ticketPrice}`);
+})
+
+})
+
+paypal.Buttons({
+    style: {
+        size: 'responsive',
+        shape: 'pill',
+        color: 'gold',
+        layout: 'horizontal',
+        label: 'paypal',
+        
+    },
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: ticketPrice
+                }
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+    }
+}).render('#paypal-button-container');
+

@@ -17,7 +17,7 @@
     <body>
         <div class="container-fluid">
             <header id='header-item'>
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar fixed-top navbar-expand-lg">
                     <a class="navbar-brand" href="#">
                         <img src='./assets/images/logo.png' alt='Boys and Girls Club Logo'>
                     </a>
@@ -42,7 +42,7 @@
                           <a class="nav-link" href="#">CONTACT</a>
                         </li>
                       </ul>
-                      <button id='ticketButton' class='button'>Buy Tickets</button>
+                      <a href='#tickets'><button id='ticketButton' class='button'>Buy Tickets</button></a>
                     </div>
                 </nav>
                 <div class="jumbotron jumbotron-fluid text-center">
@@ -52,7 +52,8 @@
                     <h5><span id='city-state'><i class="fas fa-globe"></i> OVIEDO, FLORIDA</span><span><i class="far fa-calendar-alt"></i> MARCH 28TH, 2020</span></h5>
                 </div>
             </header>
-            <div id='countdown' class="row text-center">
+
+            <section id='countdown' class="row text-center">
               <div class="col-lg-12">
                 <h6>TIME IS RUNNING OUT</h5>
                 <h2>BOOK YOUR TICKET</h3>
@@ -78,8 +79,65 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
+
+            <section id='sponsorship' class='text-center'>
+              <div class="row text-center">
+                <div class='col-lg-12'>
+                  <h1>SPONSORSHIP PRICING</h1>
+                  <div class='row'>
+                    <div class="col-lg-12">
+                      <div id='package1' class='sponsorship-pricing' data-value='250.00'>
+                          <h3>Bronze | $250</h3>
+                          <ul>
+                            <li>Digital Program Listing</li>
+                            <li>Swag Bag</li>
+                            <li>Listed on Website Sponsor Page</li>
+                            <li>Listed on Social Media Sponsor Album</li>
+                            <li>Listed on Event Flyer</li>
+                            <li>Free Business Marketing Analysis</li>
+                            <li>50% off Event Tickets</li>
+                          </ul>
+                        </a>
+                      </div>
+                      <div id="package2" class='sponsorship-pricing' data-value='500.00'>
+                        <h3>Silver | $500</h3>
+                        <ul>
+                          <li>Digital Program 1/4 page Listing</li>
+                          <li>Swag Bag</li>
+                          <li>Listed on Website Sponsor Page w/ Link</li>
+                          <li>Logo on Social Media Sponsor Album</li>
+                          <li>Listed on Event Flyer</li>
+                          <li>Free Business Marketing Analysis</li>
+                          <li>2 Free Graphics for Business Use</li>
+                          <li>2 Event Tickets</li>
+                        </ul>
+                      </div>
+                      <div id="package3" class='sponsorship-pricing' data-value='1000.00'>
+                        <h3>Gold | $1000</h3>
+                        <ul>
+                          <li>Digital Program 1/2 page Listing</li>
+                          <li>Swag Bag</li>
+                          <li>Logo/Listed on Website Sponsor Page w/ Link</li>
+                          <li>Logo/link on Social Media Sponsor Album</li>
+                          <li>Reoccurring Sponorship Posts</li>
+                          <li>Logo/Listed on all Event Promotional Material</li>
+                          <li>Free Business Marketing Analysis</li>
+                          <li>5 Free Graphics for Business Use</li>
+                          <li>1 Month Social Media Management</li>
+                          <li>2 Event Tickets</li>
+                        </ul>
+                      </div>
+                      <div id="paypal-button-container"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
         </div>
+
+        <!--====== PayPal API JS ======-->
+        <script src="https://www.paypal.com/sdk/js?client-id=Abw_wWYkmVrlITyvQS9fIXbishNLmccY6uFrPmgJYlRypMGdgt1rhN2hgOFzP1TCjI2vi8fHazrv7BGI&currency=USD" data-sdk-integration-source="button-factory"></script>
 
         <!--====== jQuery JS ======-->
         <script src='./assets/js/jquery-3.4.1.min.js'></script>        
@@ -93,6 +151,7 @@
 
         <!--====== FontAwesome JS ======-->
         <script src="https://kit.fontawesome.com/6fcab18de6.js"></script>
+
     </body>
     <footer>
 

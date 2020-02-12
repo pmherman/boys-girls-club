@@ -108,7 +108,7 @@ header {
     text-align: center;
 }
 
-#ticketButton {
+.button {
     width: 150px;
     height: 35px;
     background: -webkit-linear-gradient(0.50turn, #822ea8, #da0e90);
@@ -117,7 +117,7 @@ header {
     border: 0px;
 }
 
-#ticketButton:hover {
+.button:hover {
     background: -webkit-linear-gradient(0.50turn, #da0e90, #822ea8);
 }
 
@@ -162,4 +162,37 @@ header {
 .timer h1 {
     font-size: 6em;
     margin-bottom: 0;
+}
+
+/* Sponsorship Section */
+
+#sponsorship {
+    font-family: barlow-bold;
+    background-color: white;
+    color: #2e2f4f;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sponsorship-pricing {
+    font-family: barlow-regular;
+    display: inline-table;
+    position: relative;
+    margin: 1em;
+    padding: 15px;
+    border: 2px solid #2e2f4f;
+    height: 25em;
+    width: 20em;
+}
+
+.sponsorship-pricing ul {
+    text-align: left;
+}
+
+#sponsorship a:hover {
+    background-color: teal;
+}
+
+.active {
+    background: -webkit-linear-gradient(0.45turn, #da0e90, #822ea8);
 }
