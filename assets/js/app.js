@@ -15,7 +15,7 @@ $(document).ready(function() {
     })
 
 //Countdown Timer
-var countDownDate = new Date("March 28, 2020 00:00:00").getTime();
+var countDownDate = new Date("April 11, 2020 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
