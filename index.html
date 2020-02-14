@@ -20,7 +20,7 @@
             <header id='header-item'>
                 <nav class="navbar fixed-top navbar-expand-lg">
                     <a class="navbar-brand" href="#">
-                        <img src='./assets/images/logo.png' alt='Boys and Girls Club Logo'>
+                        <img src='./assets/images/logo.png' height='20px' alt='Boys and Girls Club Logo'>
                     </a>
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
@@ -34,16 +34,19 @@
                           <a class="nav-link" href="#countdown">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">ARTISTS</a>
+                          <a class="nav-link" href="#sponsors">OUR SPONSORS</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#sponsorship">PRICING</a>
+                          <a class="nav-link" href="#artists">GUESTS</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#contact">CONTACT</a>
+                          <a class="nav-link" href="#sponsorship">SPONSORSHIP PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#contactUs">CONTACT</a>
                         </li>
                       </ul>
-                      <a href='#tickets'><button id='ticketButton' class='button'>Buy Tickets</button></a>
+                      <a href='#tickets'><button id='ticketButton' class='button' aria-label="Buy Tickets" aria-labelledby="Buy Tickets">Buy Tickets</button></a>
                     </div>
                 </nav>
                 <div class="jumbotron jumbotron-fluid text-center">
@@ -78,6 +81,56 @@
                       <p>Seconds</p>
                     </div>             
                   </div>
+                </div>
+              </div>
+            </section>
+
+            <section id='aboutUs' class='text-left'>
+              <div class="row">
+                <div class="col-lg-6">
+                  <h5>ABOUT EVENT</h5>
+                  <h2>ART GALA FUNDRAISING EVENT FOR THE BOYS AND GIRLS CLUB</h2>
+                  <p>This event is dedicated to the children and to educate the City of Oviedo about the new site opening. Join alongside us for an event filled with local painters, musicians, and speakers talking about the upcoming new location and how you can help children in your community grow!</p>
+                </div>
+                <div class="col-lg-6">
+                  <img class='img-fluid' src='./assets/images/image2.jpg' alt=''>
+                </div>
+              </div>
+            </section>
+
+            <section id='sponsors' class='text-center'>
+              <div class="row">
+                <div class="col-lg-12">
+                  <h5>OUR SPONSORSHIPS</h5>
+                  <h1>MAIN SPONSORS</h1>
+                  <a href='https://www.bgccf.org/' target='_blank'><img class='img-fluid' src='./assets/images/bgc_cent_fl_logo.png' alt='Boys and Girls Club of Central Florida'></a>
+                  <a href='https://cityofoviedo.net/' target='_blank'><img class='img-fluid' src='./assets/images/city-of-oviedo.jpg' alt='City of Oviedo'></a>
+                </div>
+              </div>
+            </section>
+
+            <section id='artists' class='text-center'>
+              <div class="row">
+                <div class="col-lg-12">
+                  <h1>WHO WILL BE AT THE EVENT</h1>
+                </div>
+                <div class="col-lg-12">
+                  <a href='#' data-toggle="modal" data-target="#bio-modal"><div class='img-wrap' onclick='displayModal(`Sage`, `<img class="img-fluid" src="./assets/images/sage2.jpg" alt="Sage"><br><p>Sage is a band from Orlando, FL that is heavily influenced by jazz, mowtown and neo-soul. Their sound is characterized by jazzy chord progressions, buttery saxophone riffs, and sweetly sad lyrics that are so gosh darn cute. The Sage Boys have a great time playing out often in the Orlando scene and throughout Florida. Sage also writes and records often, and has a lot of music lined up for release that they are very excited about.</p><a href="https://open.spotify.com/artist/3rmDtaAXU9YXEK1ChZyx98?si=8rlvpGyUSDKN-iWgnAt3sg" target="_blank"><i class="fab fa-spotify"></i></a>`)'>
+                    <img src="./assets/images/sage.jpg" alt="Coming Soon" class="img-thumbnail">
+                    <p class='img-description'>Sage</p>
+                  </div></a>
+                  <a href='#' data-toggle="modal" data-target="#bio-modal"><div class='img-wrap' onclick='displayModal(`Jeff Chudnow`, `<p>A native of Chicago, Illinois, Jeff Chudnow attended Northeastern Illinois University on a swimming scholarship before transferring to Western Illinois University where he graduated with a Bachelor of Science in Law Enforcement Administration. He also attained a Master of Public Administration from Nova University.</p><p>Council Member Chudnow began his law enforcement career in Madison, Wisconsin in 1974 and later joined the Coral Springs Police Department in 1982 where he served for 25 years. In 2007, he was selected as Oviedo Police Chief and served until his retirement in 2017.</p><p>During his successful 43-year law enforcement career, Jeff served on numerous boards and committees to include Chair of the Broward County Juvenile Assessment Center Oversight Committee; Chair Broward Institute of Public Safety Joint Advisory Committee; Co-Chair of Broward County’s Multi-Agency Gang Task Force; a member of the Region Thirteen Criminal Justice Training Council; Coral Springs Medical Center Community Relations Council; an assessor for the Commission for Florida Law Enforcement Accreditation and the Florida Commission for Law Enforcement Accreditation. In addition, he served as the President of the Central Florida Criminal Justice Association; Board of Directors Florida Chiefs of Police Association; Board Member for Kids Safe House of Seminole; a member Governors’ Florida Violent Crime and Drug Control Council Executive; Commissioner and Chair on the Commission for Florida Law Enforcement Accreditation and a Trustee for Boys Town Central Florida.</p><p>In retirement, Jeff serves on the boards of Central Florida Crimeline; Boys & Girls Club of Seminole; Friends of Children and Families and the Oviedo Police Foundation.</p>`)'>
+                    <img src="./assets/images/jeff_chudnow.jpg" alt="Jeff Chudnow" class="img-thumbnail">
+                    <p class='img-description'>Jeff Chudnow</p>
+                  </div></a>
+                  <a href='#' data-toggle="modal" data-target="#bio-modal"><div class='img-wrap' onclick='displayModal(`Coming Soon`, `...`)'>
+                    <img src="https://via.placeholder.com/250x310" alt="Coming Soon" class="img-thumbnail">
+                    <p class='img-description'>Coming Soon</p>
+                  </div></a>
+                  <a href='#' data-toggle="modal" data-target="#bio-modal"><div class='img-wrap' onclick='displayModal(`Coming Soon`, `...`)'>
+                    <img src="https://via.placeholder.com/250x310" alt="Coming Soon" class="img-thumbnail">
+                    <p class='img-description'>Coming Soon</p>
+                  </div></a>
                 </div>
               </div>
             </section>
@@ -161,6 +214,37 @@
               </div>
             </section>
 
+            <section id='contactUs' class='text-center'>
+              <div class='row'>
+                <div class="col-lg-12">
+                  <h5>NEWSLETTER SIGNUP</h5>
+                  <h2>JOIN FOR NEWS UPDATES</h2>
+                  <form id='contactUsForm' method="POST" action="./assets/php/contact.php">
+                    <div class="form-content">
+                      <input type='email' name='email' placeholder="Email Address"><button class='button' id='subscribeNowButton' aria-labelledby="Subscribe Now" aria-label='Subscribe Now'>SUBSCRIBE NOW</button>
+                      <div class='form-message'></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <!-- Dynamic Modal -->
+            <div id='bio-modal' class="modal" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                  </div>
+                  <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close Modal" aria-labelledby="Close Modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
         <!--====== PayPal API JS ======-->
         <script src="https://www.paypal.com/sdk/js?client-id=Abw_wWYkmVrlITyvQS9fIXbishNLmccY6uFrPmgJYlRypMGdgt1rhN2hgOFzP1TCjI2vi8fHazrv7BGI&currency=USD" data-sdk-integration-source="button-factory"></script>
 
@@ -179,15 +263,19 @@
 
     </body>
     <footer>
-      <div class="row text-center">
+      <div id='footerContent' class="row text-center">
         <div class="col-lg-4">
-
+          <img class='img-fluid' src='./assets/images/logo.png' alt='Boys and Girls Logo'>
         </div>
-        <div class="col-lg-4">
-
+        <div class="col-lg-4 text-left">
+          <h3>EVENT DETAIL</h3>
+          <h4><span class='date'>APRIL 11TH, 2020</span></h4>
+          <h4>357 Centre Lake Ln. Oviedo, FL 32765</h4>
         </div>
-        <div class="col-lg-4">
-
+        <div class="col-lg-4 text-left">
+          <h3>SOCIAL UPDATES</h3>
+          <h4>It is a long established fact that a reader will be distracted by the readable content.</h4>
+          <a href='https://www.facebook.com/events/488201841864899' target='_blank'><h4><i class="fab fa-facebook-square"></i></h4></a>
         </div>
       </div>
       <hr>

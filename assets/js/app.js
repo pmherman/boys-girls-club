@@ -75,6 +75,15 @@ $('.ticket-pricing').click(function(e) {
 
 })
 
+displayModal = (name, description) => {
+    $('#bio-modal .modal-header').html(`<h5 class="modal-title">${name}</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>`)
+    $('#bio-modal .modal-body').html(`<div class='row'><div class='col-lg-12'>${description}</div></div>`)
+}
+
+$('#subscribeNowButton').click(function(){
+    alert('Your message has sent successfully');
+})
+
 paypal.Buttons({
     funding:
     {
