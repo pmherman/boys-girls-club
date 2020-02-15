@@ -181,7 +181,13 @@ header {
     padding-right: 20px;
     background: white;
     background-size: cover;
+    padding-left: 5px;
+    padding-right: 5px;
 
+}
+
+#aboutUs .col-lg-6 {
+    padding-left: 50px;
 }
 
 #aboutUs h2 {
@@ -202,6 +208,10 @@ header {
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    #aboutUs .col-lg-6 {
+        padding-left: 10px;
+    }
 }
 
 /* Sponsors Section */
@@ -214,6 +224,8 @@ header {
     font-family: barlow-bold;
     padding-top: 60px;
     padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #sponsors h5 {
@@ -230,6 +242,13 @@ header {
     height: 200px;
     border: 2px solid black;
 }
+
+@media screen and (max-width: 991px) { 
+    #sponsors .img-fluid {
+        margin: 15px;
+    }
+}
+
 /* artists Section */
 
 #artists .row {
@@ -240,6 +259,8 @@ header {
     font-family: barlow-bold;
     padding-top: 60px;
     padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #artists h5 {
@@ -284,7 +305,46 @@ header {
     visibility: visible;
     opacity: 1;
   }
+
+  @media screen and (max-width: 991px) { 
+    #artists .img-wrap {
+        margin: 15px;
+    }
+}
+
+/* Success Stories */
   
+#successStories .row {
+    background: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: barlow-bold;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#successStories h2 {
+    font-size: 3em;
+}
+
+#successStories .img-fluid {
+    width: 300px;
+    border: 3px solid white;
+    margin: 20px;
+}
+
+#successStories .img-wrap {
+    display: inline-block;
+}
+
+@media screen and (max-width: 991px) { 
+    #successStories .button {
+        width: 300px;
+    }
+}
 
 /* Sponsorship Section */
 
@@ -310,12 +370,18 @@ header {
     width: 20em;
 }
 
-.sponsorship-pricing ul {
-    text-align: left;
+#sponsorship a {
+    color: #2e2f4f;
 }
 
 #sponsorship a:hover {
-    background-color: teal;
+    color: #da0e90;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.sponsorship-pricing ul {
+    text-align: left;
 }
 
 #sponsorship small {
@@ -324,6 +390,14 @@ header {
 
 .active {
     background: -webkit-linear-gradient(0.45turn, #da0e90, #822ea8);
+}
+
+.package-pricing {
+    padding-top: 20px !important;
+}
+
+#paypal-button-container1 {
+    margin-top: 20px;
 }
 
 /* Ticket Section */
@@ -382,14 +456,36 @@ header {
 #contactUs input {
     width: 400px;
     height: 40px;
+    margin: 10px;
     padding: 2px;
     border: 0;
+}
+
+#contactUs textarea {
+    width: 400px;
+    height: 150px;
+    margin: 10px;
 }
 
 #contactUs .button {
     height: 40px;
     padding-bottom: 0;
 }
+
+@media screen and (max-width: 991px) { 
+    #contactUs .button {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #contactUs input, #contactUs textarea {
+        width: 350px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+  
 
 /* footer */
 
@@ -439,7 +535,15 @@ footer hr {
 #footerContent .fa-facebook-square:hover { 
     color: #d90e90;
 }
+@media screen and (max-width: 991px) { 
+    #footerContent .col-lg-4 {
+        margin: 15px;
+    }
 
+    #footerContent .img-fluid {
+        padding-bottom: 20px;
+    }
+}
 
 /* Bio Modal */
 #bio-modal .modal-content{
@@ -447,8 +551,6 @@ footer hr {
 }
 
 #bio-modal .modal-body {
-    padding-left: 10px;
-    padding-right: 10px;
     height: 400px;
     overflow: auto;
 }
@@ -489,10 +591,59 @@ footer hr {
     border: 1px solid rgb(61, 0, 61);;
 }
 
-.fa-spotify {
+.fa-spotify, .fa-globe-americas, .fa-facebook,
+.fa-instagram-square {
+    margin: 5px;
     font-size: 3em;
 }
 
-.fa-spotify:hover {
+.fa-spotify:hover, .fa-globe-americas:hover, .fa-facebook:hover,
+.fa-instagram-square:hover {
     color: rgb(179, 177, 177)
 }
+
+.gold {
+    background: #D4AF37 !important;
+    color: black;
+}
+
+.bronze {
+    background: #cd7f32 !important;
+    color: black;
+}
+
+.silver {
+    background: silver !important;
+    color: black;
+}
+
+/* Video Modal  */
+
+#video-modal .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+    outline: none;
+}
+
+#video-modal .modal-content {
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    margin-top: 30%;
+    border: 0px transparent;
+}
+
+#video-modal .modal-body {
+    border: 0px transparent;
+}
+
+#video-modal .close {
+    position:absolute;
+    right:-30px;
+    top:0;
+    z-index:999;
+    font-size:2rem;
+    font-weight: normal;
+    color:#fff;
+    opacity:1;
+  }

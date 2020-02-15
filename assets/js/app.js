@@ -73,15 +73,43 @@ $('.ticket-pricing').click(function(e) {
     console.log(`Current Package Selected: ${ticketPrice}`);
 })
 
+var $videoSrc;
+
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data('src');
+    console.log($videoSrc);
+});
+
+$('#video-modal').on('show.bs.modal', function(e) {
+    $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
 })
 
-displayModal = (name, description) => {
+$('#video-modal .modal-body').click(function() {
+    $('#video-modal').modal('toggle');
+})
+
+
+})
+
+displayModal = (sponsor, name, description) => {
+    $sponsorLevel = $(sponsor).data('sponsor');
     $('#bio-modal .modal-header').html(`<h5 class="modal-title">${name}</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>`)
     $('#bio-modal .modal-body').html(`<div class='row'><div class='col-lg-12'>${description}</div></div>`)
+    if ($sponsorLevel === 'none') {
+        $('#bio-modal .modal-content').removeClass('gold silver bronze');
+    } else {
+        $('#bio-modal .modal-content').addClass($sponsorLevel);
+    }
+    
 }
 
 $('#subscribeNowButton').click(function(){
-    alert('Your message has sent successfully');
+    if ($('#nameInput').val() !== '' && $('#emailInput').val() !== '' && $('#sponsorshipInput').val() !== '' && $('#commentsInput').val() !== '' ) {
+        alert('Your message has sent successfully');
+    } else {
+        alert('Please complete form and try again!')
+    }
+    
 })
 
 paypal.Buttons({
