@@ -240,7 +240,12 @@ header {
 #sponsors .img-fluid {
     margin-right: 20px;
     height: 200px;
+    margin: 15px;
     border: 2px solid black;
+}
+
+#sponsors .img-fluid:hover {
+    box-shadow: 8px 8px 15px grey;
 }
 
 @media screen and (max-width: 991px) { 
@@ -279,6 +284,7 @@ header {
 
 #artists .img-wrap {
     display: inline-block;
+    padding: 10px;
 }
 
 #artists .img-wrap {
@@ -288,9 +294,9 @@ header {
 }
 #artists .img-description {
     position: absolute;
-    width: 100%;
+    width: 92%;
     height: 3em;
-    top: 92%;
+    top: 89%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(130, 46, 168,0.8);
@@ -530,6 +536,7 @@ footer hr {
 
 #footerContent .fa-facebook-square {
     font-size: 4em;
+    color: #b2b2c5;
 }
 
 #footerContent .fa-facebook-square:hover { 
