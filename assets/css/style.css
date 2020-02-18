@@ -599,14 +599,14 @@ footer hr {
 }
 
 .fa-spotify, .fa-globe-americas, .fa-facebook,
-.fa-instagram-square {
+.fa-instagram-square, .fa-phone-square-alt {
     margin: 5px;
     font-size: 3em;
 }
 
 .fa-spotify:hover, .fa-globe-americas:hover, .fa-facebook:hover,
 .fa-instagram-square:hover {
-    color: rgb(179, 177, 177)
+    color: rgb(179, 177, 177);
 }
 
 .gold {
@@ -614,15 +614,40 @@ footer hr {
     color: black;
 }
 
+.gold .fa-phone-square-alt, .gold .fa-globe-americas, .gold .fa-facebook {
+    color: black;
+}
+
+.gold .fa-phone-square-alt:hover, .gold .fa-globe-americas:hover, .gold .fa-facebook:hover {
+    color: purple;
+}
+
 .bronze {
     background: #cd7f32 !important;
     color: black;
+}
+
+.bronze .fa-phone-square-alt, .bronze .fa-globe-americas, .bronze .fa-facebook {
+    color: black;
+}
+
+.bronze .fa-phone-square-alt:hover, .bronze .fa-globe-americas:hover, .bronze .fa-facebook:hover {
+    color: purple;
 }
 
 .silver {
     background: silver !important;
     color: black;
 }
+
+.silver .fa-phone-square-alt, .silver .fa-globe-americas, .silver .fa-facebook {
+    color: black;
+}
+
+.silver .fa-phone-square-alt:hover, .silver .fa-globe-americas:hover, .silver .fa-facebook:hover {
+    color: purple;
+}
+
 
 /* Video Modal  */
 
