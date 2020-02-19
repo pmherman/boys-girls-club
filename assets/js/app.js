@@ -88,6 +88,9 @@ $('#video-modal .modal-body').click(function() {
     $('#video-modal').modal('toggle');
 })
 
+$('.img-wrap').click(function () {
+    
+});
 
 })
 
