@@ -92,6 +92,10 @@ $('.img-wrap').click(function () {
     
 });
 
+$('#video-modal .close').click(function(){
+    $('#video').attr('src', '');
+})
+
 })
 
 displayModal = (sponsor, name, description) => {
