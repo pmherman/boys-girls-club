@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bgccf-art-gala.oviedomarketinggroup.com/sitemap.xml
