@@ -426,6 +426,7 @@ header {
 }
 
 .ticket-pricing {
+    background-color: transparent;
     font-family: barlow-regular;
     display: inline-table;
     position: relative;

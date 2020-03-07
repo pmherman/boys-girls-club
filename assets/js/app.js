@@ -70,7 +70,17 @@ $('.ticket-pricing').click(function(e) {
     $(this).css({'background-color':'#f00','color':'white'});
     $(this).addClass('active');
     ticketPrice = $(this).data('value');
-    console.log(`Current Package Selected: ${ticketPrice}`);
+    console.log(`Ticket Value: ${ticketPrice}`)
+})
+
+$(document).click(function(e) {
+    if($(e.target).is('.ticket-pricing, .ticket-pricing h3, .ticket-pricing h5, .sponsorship-pricing, .sponsorship-pricing h3, .sponsorship-pricing ul, .sponsorship-pricing li') === false) {
+        $('.ticket-pricing, .sponsorship-pricing').removeClass('active');
+        $('.ticket-pricing').css({'background-color':'transparent','color':'white'});
+        $('.sponsorship-pricing').css({'background-color':'transparent','color':'#2e2f4f'});
+        ticketPrice = null;
+        console.log(`Ticket Value: ${ticketPrice}`)
+    }
 })
 
 var $videoSrc;
