@@ -18,10 +18,10 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "info@oviedomarketinggroup.com";
+        $recipient = "Tbearny85@gmail.com, pmherman85@icloud.com";
 
         // Set the email subject.
-        $subject = "Join Newsletter Request: $email";
+        $subject = "Sponsorship Request: $email";
 
         // Build the email content.
         $email_content = "Full Name: $name\n";
