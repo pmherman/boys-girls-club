@@ -102,7 +102,7 @@ $('.img-wrap').click(function () {
     
 });
 
-$('#video-modal .close').click(function(){
+$('#video-modal .close, .modal').click(function(){
     $('#video').attr('src', '');
 })
 
@@ -127,7 +127,7 @@ $('#subscribeNowButton').click(function(){
         alert('Please complete form and try again!')
     }
     
-})
+});
 
 paypal.Buttons({
     funding:
@@ -191,3 +191,34 @@ paypal.Buttons({
     }
 }).render('#paypal-button-container2');
 
+
+paypal.Buttons({
+    funding:
+    {
+        disallowed: [ paypal.FUNDING.CREDIT ]
+    },
+    style: {
+        size: 'responsive',
+        shape: 'pill',
+        color: 'gold',
+        layout: 'horizontal',
+        label: 'paypal',
+        tagline: 'false'
+        
+    },
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    name: 'Standard Ticket',
+                    value: $('#donateInput').val()
+                }
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+    }
+}).render('#paypal-button-container3');

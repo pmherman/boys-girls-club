@@ -437,6 +437,52 @@ header {
     width: 20em;
 }
 
+/* Donation Section */
+
+#donateBox .row {
+    font-family: barlow-bold;
+    background-color: black;
+    background-size: cover;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#donateBox h2 {
+    color: #f09922;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+#donateBox h5 {
+    color: white;
+    font-family: barlow-regular;
+    text-transform: uppercase;
+}
+
+#donateBox input {
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    padding: 2px;
+    border: 0;
+    font-weight: normal;
+    font-family: barlow-regular;
+    text-align: center;
+}
+
+#donateBox input {
+    margin-bottom: 30px !important;
+}
+
+#donateBox input::-webkit-outer-spin-button,
+#donateBox input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* Contact Us Section */
 #contactUs .row {
     background-color: #26264b;
