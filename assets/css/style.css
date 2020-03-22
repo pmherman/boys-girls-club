@@ -728,3 +728,29 @@ footer hr {
     color:#fff;
     opacity:1;
   }
+
+  /* Bio Notice Temp Container */
+
+  .notice {
+    background: lightgoldenrodyellow !important;
+    color: black;
+    text-align: center;
+  }
+
+  .notice h5 {
+      color: red;
+  }
+
+  .notice a {
+      color: blue !important;
+  }
+
+  .notice .btn-danger {
+      background-color: red !important;
+      border: 1px solid red !important;
+  }
+
+  .notice .btn-danger:hover {
+    background-color: darkred !important;
+    border: 1px solid darkred !important;
+}

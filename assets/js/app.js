@@ -1,5 +1,11 @@
 var ticketPrice;
 
+//Display Notice of Date Change on Page Load
+$(document).ready(function() {
+    displayAlert();
+})
+
+
 $(document).ready(function() {
     $('.ml-auto').click(function() {
         if ($("#navbarNav").hasClass("show")) {
@@ -15,7 +21,7 @@ $(document).ready(function() {
     })
 
 //Countdown Timer
-var countDownDate = new Date("April 11, 2020 00:00:00").getTime();
+var countDownDate = new Date("March 21, 2020, 00:00:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -31,11 +37,8 @@ var x = setInterval(function() {
     $('#minutes').html(`${minutes}`)
     $('#seconds').html(`${seconds}`)
     
-    // document.getElementById("countdown-timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
     if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+        document.getElementById('countdown').style.display = 'none';
       }
 }, 1000)
 
@@ -117,7 +120,17 @@ displayModal = (sponsor, name, description) => {
     } else {
         $('#bio-modal .modal-content').addClass($sponsorLevel);
     }
-    
+}
+
+displayAlert = () => {
+    $('#bio-modal').modal('show');
+    $('#bio-modal .modal-content').addClass('notice');
+    $('#bio-modal').on('hidden.bs.modal', function(e) {
+        $('#bio-modal .modal-content').removeClass('notice');
+    });
+    $('#bio-modal .modal-header').html(`<h5 class="modal-title">Notice:</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>`)
+    $('#bio-modal .modal-body').html(`"Due to the seriousness of the COVID-19 we will be postponing the Boys & Girls Art Gala until such time that it is safe to resume the event. <br><br> We are still accepting donations and you can still purchase tickets to the event<br><br>More information to come.<br><br>New Date of the event is To Be Determined at this time<br><br>For more information please feel free to email us <a href='mailto:info@oviedomarketinggroup.com'>here</a>`);
+
 }
 
 $('#subscribeNowButton').click(function(){
