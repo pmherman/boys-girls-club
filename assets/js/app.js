@@ -129,7 +129,7 @@ displayAlert = () => {
         $('#bio-modal .modal-content').removeClass('notice');
     });
     $('#bio-modal .modal-header').html(`<h5 class="modal-title">Notice:</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>`)
-    $('#bio-modal .modal-body').html(`"Due to the seriousness of the COVID-19 we will be postponing the Boys & Girls Art Gala until such time that it is safe to resume the event. <br><br> We are still accepting donations and you can still purchase tickets to the event<br><br>More information to come.<br><br>New Date of the event is To Be Determined at this time<br><br>For more information please feel free to email us <a href='mailto:info@oviedomarketinggroup.com'>here</a>`);
+    $('#bio-modal .modal-body').html(`Due to the seriousness of the COVID-19 we will be postponing the Boys & Girls Art Gala until such time that it is safe to resume the event. <br><br> We are still accepting donations and you can still purchase tickets to the event<br><br>More information to come.<br><br>New Date of the event is To Be Determined at this time<br><br>For more information please feel free to email us <a href='mailto:info@oviedomarketinggroup.com'>here</a>`);
 
 }
 
